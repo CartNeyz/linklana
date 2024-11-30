@@ -1,0 +1,25 @@
+body {
+    background-color: pink; /* Cor de fundo */
+    font-family: sans-serif; /* Fonte para o conteúdo */
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center; /* Centraliza horizontalmente */
+    align-items: center;     /* Centraliza verticalmente */
+    flex-direction: column;  /* Organiza os painéis um em cima do outro */
+    height: 100vh;           /* Altura total da janela */
+}
+
+
+.painel2 {
+    width: 500px; /* Largura do painel */
+    background-color: white;
+    color: black; /* Cor do texto */
+    border-radius: 30px; /* Bordas arredondadas */
+    text-align: center; /* Centraliza o texto dentro do painel */
+    padding: 5px;
+    display: flex;
+    flex-direction: column; /* Organiza o conteúdo em coluna */
+    align-items: center;     /* Centraliza verticalmente o conteúdo */
+}
+
