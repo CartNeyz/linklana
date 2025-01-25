@@ -1,25 +1,112 @@
-body {
-    background-color: pink; /* Cor de fundo */
-    font-family: sans-serif; /* Fonte para o conteúdo */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
+
+* {
     margin: 0;
     padding: 0;
-    display: flex;
-    justify-content: center; /* Centraliza horizontalmente */
-    align-items: center;     /* Centraliza verticalmente */
-    flex-direction: column;  /* Organiza os painéis um em cima do outro */
-    height: 100vh;           /* Altura total da janela */
+    box-sizing: border-box;
+    font-family: "Roboto";
+    border: none;
 }
 
+html::-webkit-scrollbar{
+    width: 5rem;
+}
 
-.painel2 {
-    width: 500px; /* Largura do painel */
+html::-webkit-scrollbar-track{
+    background: transparent;
+}
+
+html::-webkit-scrollbar-track{
     background-color: white;
-    color: black; /* Cor do texto */
-    border-radius: 30px; /* Bordas arredondadas */
-    text-align: center; /* Centraliza o texto dentro do painel */
-    padding: 5px;
-    display: flex;
-    flex-direction: column; /* Organiza o conteúdo em coluna */
-    align-items: center;     /* Centraliza verticalmente o conteúdo */
+    border-radius:5rem;
 }
 
+.background{
+    background-image: url(backgroundcafe1.jpg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    height: 100vh;
+}
+
+body {
+    background-color: black;
+}
+
+header{
+    display:flex;
+    justify-content: space-between;
+    max-width: 100%;
+    padding-top: 1.5rem;
+    align-items: center;
+}
+
+.logo img {
+    width: 75px;
+    height: auto;
+    margin-left: 5rem;
+}
+
+ul{
+    list-style: none;
+    display: flex;
+    gap: 3rem;
+}
+
+ul li{
+    list-style: none;
+}
+
+ul li a {
+    text-decoration: none;
+    color: white;
+    transition: 0.3s;
+}
+
+.C-icons{
+    margin-right: 5rem;
+}
+
+.C-icons ion-icon{
+    color: white;
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+.ul li a :hover{
+    text-transform:capitalize;
+    color: rgb(101, 110, 3);
+    border-bottom: solid 1px;
+}
+
+hr{
+    border-bottom: solid 0.1;
+    color: rgb(54, 46, 46);
+    margin-top: 15px;
+}
+
+.C-title{
+    margin-left: 5rem;
+    margin-top: 10rem;
+}
+
+.C-title h1{
+    color: white;
+    font-size: 5rem;
+}
+
+.C-title p{
+    color: rgb(231, 208, 208);
+    line-height: 2rem;
+    font-size: 1.2rem;
+    font-weight: 100;
+}
+
+.C-title button{
+    margin-top: 2rem;
+    background-color: #d3ad7f;
+    color: white;
+    font-size: 1.2rem;
+    padding: 15px;
+}
